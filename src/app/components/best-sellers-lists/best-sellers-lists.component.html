@@ -1,0 +1,6 @@
+<div class="container">
+    <h1>Best Sellers Lists</h1>
+    <ul class="list-group">
+        <a *ngFor="let list of bestSellerLists" [routerLink]="['/list', list.list_name_encoded]" class="list-group-item list-group-item-action animate__animated animate__bounce animate__fadeIn">{{list.list_name}}</a>
+    </ul>
+</div>

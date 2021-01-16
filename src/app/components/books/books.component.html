@@ -1,0 +1,14 @@
+<div class="container mt-5">
+    <div class="col-md-3">
+        <a class="btn btn-danger" routerLink="/">Back</a>
+    </div>
+    <h3 class="books-list-title">{{listTitle}}</h3>
+    <h5 class="books-list-title">Best sellers</h5>
+    <div class="row animate__animated animate__bounce animate__fadeIn" style="margin-top: 2em;">
+        <div *ngFor="let book of books" class="col-md-4">
+            <p class="book-title"><strong>#{{book.rank}}</strong> {{book.title}}</p>
+            <img style="width: 150px; height: 220px;" src="{{book.book_image}}" alt="{{book.title}}" title="{{book.description}}">
+            <p>{{book.author}}</p>
+        </div>
+    </div>
+</div>

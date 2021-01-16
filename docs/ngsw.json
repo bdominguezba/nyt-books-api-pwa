@@ -1,0 +1,97 @@
+{
+  "configVersion": 1,
+  "timestamp": 1610833663820,
+  "index": "/nyt-books-api-pwa/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/nyt-books-api-pwa/favicon.ico",
+        "/nyt-books-api-pwa/index.html",
+        "/nyt-books-api-pwa/main.45d45f673800fecc6d27.js",
+        "/nyt-books-api-pwa/manifest.webmanifest",
+        "/nyt-books-api-pwa/polyfills.2e89f9530eab053a7df4.js",
+        "/nyt-books-api-pwa/runtime.0e49e2b53282f40c8925.js",
+        "/nyt-books-api-pwa/styles.280e991c5992f8630bc9.css"
+      ],
+      "patterns": [
+        "https:\\/\\/cdn\\.jsdelivr\\.net\\/npm\\/bootstrap@5\\.0\\.0-beta1\\/dist\\/css\\/bootstrap\\.min\\.css"
+      ]
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/nyt-books-api-pwa/assets/css/animate.css",
+        "/nyt-books-api-pwa/assets/icons/icon-128x128.png",
+        "/nyt-books-api-pwa/assets/icons/icon-16x16.png",
+        "/nyt-books-api-pwa/assets/icons/icon-24x24.png",
+        "/nyt-books-api-pwa/assets/icons/icon-256x256.png",
+        "/nyt-books-api-pwa/assets/icons/icon-32x32.png",
+        "/nyt-books-api-pwa/assets/icons/icon-512x512.png",
+        "/nyt-books-api-pwa/assets/icons/icon-64x64.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "nyt-books-api",
+      "patterns": [
+        "https:\\/\\/api\\.nytimes\\.com\\/[^/]*"
+      ],
+      "strategy": "freshness",
+      "maxSize": 10,
+      "maxAge": 3600000,
+      "timeoutMs": 1000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "/nyt-books-api-pwa/assets/css/animate.css": "bc96496831f4df311443b8e3d76cfc17db53a988",
+    "/nyt-books-api-pwa/assets/icons/icon-128x128.png": "aba05a998971943f74c34a5f420bd1c6b2fcce17",
+    "/nyt-books-api-pwa/assets/icons/icon-16x16.png": "9c2ae4ff792eff997f3c21713016ade6a8633ad9",
+    "/nyt-books-api-pwa/assets/icons/icon-24x24.png": "48d97dffba377a899198a2d268c25aa30efb2ccd",
+    "/nyt-books-api-pwa/assets/icons/icon-256x256.png": "e66b863805bc0f9c25ebb2ae0bd66f12024b6df7",
+    "/nyt-books-api-pwa/assets/icons/icon-32x32.png": "8c437dafba8f0576a558fd8f895383d6a29886d3",
+    "/nyt-books-api-pwa/assets/icons/icon-512x512.png": "50041c95935f3bd0a3897a98ea07c6e46605711c",
+    "/nyt-books-api-pwa/assets/icons/icon-64x64.png": "bccd48ab32e353dd03f8dd820e459518ffce96fe",
+    "/nyt-books-api-pwa/favicon.ico": "d37fda191f01b57377b79271958a514f7479e9e5",
+    "/nyt-books-api-pwa/index.html": "e2c850a3c60d9010f181c2aeb121f28a361bc674",
+    "/nyt-books-api-pwa/main.45d45f673800fecc6d27.js": "60b26938e72b46713036de2f8d364e7a7bfa6373",
+    "/nyt-books-api-pwa/manifest.webmanifest": "5dda2286fbe9738662b479e4c531f5b89b0ae63a",
+    "/nyt-books-api-pwa/polyfills.2e89f9530eab053a7df4.js": "763cd3b34dfa4600ebb9d9588ec7116988e98920",
+    "/nyt-books-api-pwa/runtime.0e49e2b53282f40c8925.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/nyt-books-api-pwa/styles.280e991c5992f8630bc9.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
